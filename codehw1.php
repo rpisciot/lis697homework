@@ -1,15 +1,18 @@
 <?php
 echo "<h2>Challenge: Correct Change</h2>";
 
-echo "You are due 159 cents back in change total.<br>";
+$change = 596;
+
+echo "You are due $change cents back in change total.<br>";
 
 
-$dollars = (159%100);
+
+$dollars = ($change%100);
 $quarters = ($dollars%25);
 $dimes = ($quarters%10);
 $nickels = ($dimes%5);
 
-$dollar = (int) (159/100);
+$dollar = (int) ($change/100);
 $quarter = (int) ($dollars/25);
 $dime = (int) ($quarters/10);
 $nickel = (int) ($dimes/5);
